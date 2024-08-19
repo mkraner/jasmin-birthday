@@ -3,23 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
+    <title>Happy Birthday Jasmin</title>
     <style>
-        /* Optional: Add your CSS directly in this file or in a separate style.css */
-        body {
+        /* Reset some basic styles */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
             font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
         }
-        h1 {
-            color: #333;
+
+        /* Container for the entire page */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Banner section */
+        .banner {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+
+        /* Banner image styling */
+        .banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Text overlay on the banner */
+        .banner h1 {
+            position: absolute;
+            min-width: 70%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Text section underneath the banner */
+        .content {
+            padding: 20px;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .banner h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                font-size: 0.9em;
+                padding: 15px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Webpage</h1>
-    <p>This is a simple HTML one-pager.</p>
-    <a href="https://example.com">Learn More</a>
+<div class="container">
+    <!-- Banner with image and text overlay -->
+    <div class="banner">
+        <img src="assets/images/group.jpg" alt="Group Image">
+        <h1>Happy Birthday Jasmin!</h1>
+    </div>
+
+    <!-- Text section -->
+    <div class="content">
+        <p><strong>Wünschen dir deine Freunde: Janis, Lena, Lenny, Luis, Marvin und Olivia!</strong></p><br>
+        <p>Alles Gute für dein neues Lebensjahr. Wir freuen uns auf viele gemeinsame Momente!</p><br>
+        <p>Da wir so gerne unsere Zeit mit dir verbringen, würden wir uns freuen, wenn du uns die Ehre erweist und mit uns <u><strong> ein langes Wochenende in Wien</strong></u> verbringst.</p>
+
+        <!-- Image of Vienna underneath the paragraphs -->
+        <img src="assets/images/wien.jpg" alt="Vienna" style="margin-top: 20px; width: 100%; height: auto;">
+    </div>
+</div>
 </body>
 </html>
-
